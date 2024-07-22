@@ -1,10 +1,5 @@
-import torch
 import torch.utils.data as data
-
 from torch_snippets import *
-from PIL import Image
-from sklearn.model_selection import train_test_split
-
 
 IMAGE_ROOT = 'images'
 DF_RAW = df = pd.read_csv('data_boxes.csv')
@@ -12,7 +7,6 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 pd.set_option('display.width', None)
 print('df.csv Structure\n', DF_RAW.head())
-# print(DF_RAW.ImageID.unique())
 
 label2target = {
     label: target + 1 for target, label in enumerate(DF_RAW['LabelName'].unique())
