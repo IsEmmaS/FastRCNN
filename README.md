@@ -29,8 +29,10 @@
  torch.unit.data.Dataset 的一个子类，获取训练所需数据
 ***
 ## 用 asset 文件夹下的demo*来做一个演示
-"eval.py"
-
-<img alt="OutPut1" src="assets/show_Bus.png" height="300"  width="300"/>
-<img alt="OutPut2" src="assets/show_Trunk.png" height="300"  width="300"/>
-***
+- output from "eval.py"
+<div style="text-align: center;">
+ <img alt="OutPut1" src="assets/show_Bus.png"/>
+ 
+ <img alt="OutPut2" src="assets/show_Trunk.png"/>
+</div>
+---
